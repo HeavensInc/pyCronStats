@@ -1,5 +1,7 @@
 import datetime
 import math
+import os
+
 
 class eStatsPolicy:
 	average  = 1
@@ -92,6 +94,7 @@ class cStatisticsManagement:
 		#  declare fixed class variables
 		#
 		self.storageFolder     = storageFolder
+		os.makedirs(storageFolder, exist_ok=True) #ensure the directories exist
 		self.storageFilePrefix = storagePrefix
 		self.storageFileFormat = "{folder:s}/{prefix:s}_{year:04d}-{month:02d}-{day:02d}.dat"
 
@@ -135,7 +138,7 @@ class cStatisticsManagement:
 			del self.data[-1]
 			dayData = cDailyData(
 							date=today,
-							entriesPerDay=entriesPerDay, 
+							entriesPerDay=self.entriesPerDay, 
 							storageFile=self.storageFileFormat.format(
 								folder=self.storageFolder,
 								prefix=self.storageFilePrefix,

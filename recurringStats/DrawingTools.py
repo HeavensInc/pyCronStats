@@ -134,8 +134,8 @@ class cDrawingTool:
 		#
 		#  yTicks
 		#
-		yTicks = (fh+3) / self.pixelHeight + 1
-		yTick  = (self.lines-yTicks-1) % yTicks
+		yTicks = int( (fh+3) / self.pixelHeight + 1  )
+		yTick  = int(self.lines-yTicks-1) % yTicks
 		
 		#
 		#  Calculate required space
