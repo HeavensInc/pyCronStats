@@ -83,6 +83,7 @@ class cRecurringStats:
 			labels.append(k.date.isoformat())
 			matrix.append(k.getMatrixLine())
 		
+		labels[0] = "Today"	
 		#
 		#  item ::-1 means reversed
 		#

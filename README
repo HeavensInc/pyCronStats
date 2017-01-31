@@ -1,9 +1,15 @@
-== About pyCronStats ==
+  ===  About pyCronStats  ===
 
-1. Idea / Problems we solve
-
+1. Idea 
+When looking at temperatures and network latencies, correlations between days
+are to be expected. These scripts log data and produce graphics to help you
+finding these correlations easily.
+ 
 2. Copying
+All code is licensed under GPL3. If you need a different License feel free to
+ask me. My software is not meant to lie around unused.
 
-3. Examples
+3. Example Picture
+http://heavens-inc.de/pictures/temp.png
 
-4. Thank you :D
+Thank you :D

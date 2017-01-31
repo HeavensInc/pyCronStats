@@ -149,11 +149,13 @@ class cStatisticsManagement:
 							storagePolicy=eStatsPolicy.average,
 							)
 			self.data = [dayData] + self.data
-		
+		elif now.minute == 0:
+			self.data[0].storeInFile()
+	
 		self.data[0].insert(value, now)
 		
 		#DEBUG (not needed every time)
-		self.data[0].storeInFile()
+		#self.data[0].storeInFile()
 		
 		return
 		

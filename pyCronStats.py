@@ -6,7 +6,7 @@ import time
 #    print("I'm working...")
 
 joblist = [
-	[ "temp",   RS.eJobType.fileRead, "/sys/devices/platform/sunxi-i2c.0/i2c-0/0-0034/temp1_input", "CPU Temperature in mC" ],
+	[ "temp",   RS.eJobType.fileRead, "/sys/devices/platform/sunxi-i2c.0/i2c-0/0-0034/temp1_input", "CPU Temperature in MilliCelsius" ],
 	[ "google", RS.eJobType.pingHost, "8.8.8.8", "Ping to Google" ],
 	[ "router", RS.eJobType.pingHost, "192.168.0.1", "Ping to Router" ],
 	[ "wifiAP", RS.eJobType.pingHost, "192.168.188.1", "Ping to WifiAP" ],

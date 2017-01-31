@@ -11,7 +11,8 @@ class colorScheme:
 	def __init__(self):
 		self.background = (200,200,200)
 		self.noData 	= (255,255,255)
-		self.error	 	= (  0,255,255)
+		self.error 	= (  0,255,255)
+		self.high 	= (255, 20, 20)
 		
 		self.text       = (  0,  0,  0)
 		self.line       = (  0,  0,  0)
@@ -171,6 +172,7 @@ class cDrawingTool:
 				["No data",     self.colors.noData ],
 				#["No data",     self.colors.tooSmall ],
 				#["Not reached", self.colors.tooLarge],
+				["Too High",    self.colors.high],
 				["Wierd...",    self.colors.error],
 			]
 
