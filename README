@@ -6,8 +6,10 @@ are to be expected. These scripts log data and produce graphics to help you
 finding these correlations easily.
  
 2. Copying
-All code is licensed under GPL3. If you need a different License feel free to
-ask me. My software is not meant to lie around unused.
+All code is licensed under GNU-GPL3. If you need a different License feel free
+to ask me. My software is not meant to lie around unused.
+'fontfile.ttf' is an unmodified copy of dejavu sans. It is licensed under the
+DEJAVU-SANS license.
 
 3. Example Picture
 http://heavens-inc.de/pictures/temp.png
